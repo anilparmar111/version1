@@ -3,11 +3,31 @@
 
 <head>
     <title>Admin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Competitive-Programming-1.jpg");
+        }
+
+        .content {
+            display: grid;
+            background-color: bisque;
+            height: 100vh;
+            place-items: center;
+        }
+
+        table {
+            border: 1px solid green;
+            border-collapse: collapse;
+            background-color: linen;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="home.html">
-        <table border="1" align="center">
+    <form action="home.html" class="content">
+        <table align="center" border="1">
             <tr>
                 <th><label>Enter Your Email Id </label></th>
                 <td><input type="email" name="email"></td>
