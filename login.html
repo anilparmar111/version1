@@ -1,18 +1,21 @@
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" href="bf.png" >
-    <title>index</title>
+    <link rel="icon" href="bf.png">
+    <title>login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
             border-radius: 10px;
             padding: 16px;
         }
+
         body {
             font-family: Swis721 Lt BT, Square721 Cn BT, Swis721 Hv BT, Swis721 BT;
             background-image: url('bcode.jpg')
         }
+
         form {
             border-radius: 25px;
             background: #0f0f0f;
@@ -21,6 +24,7 @@
             padding: 20px 20px 20px;
             width: 500px;
         }
+
         button {
             font-family: Arial Rounded MT Bold;
             background-color: #a75f20;
@@ -32,37 +36,74 @@
             width: 100%;
             border-radius: 10px;
         }
+
+        input{
+            font-family: Arial Rounded MT Bold;
+            background-color: #555555;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            
+            width: 100%;
+            border-radius: 10px;
+        }
+
         button:hover {
             background-color: #FFCB9A;
             color: black;
         }
+
+        ::placeholder {
+            color: white;
+        }
+
+        table,
+        th,
+        td {
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <form>
         <div class="container">
             <h2 align="center">
-                <font color="#116466" >Welcome To The CodeGuru</font>
+                <font color="#116466">Welcome To The CodeGuru</font>
             </h2>
             <font color="#116466" class="heading">
                 <center><img title="Think out of the box for code" src="images.jpg"></center>
+                <input  type="text"  placeholder="Enter Userid Or Email" id="uname">
+                <input  type="password"  placeholder="Enter Password " id="pswd">
                 <button type="button" onclick="signin()">Sign In</button><br>
-                <h3 align="center">
-                    <font color="#116466">OR</font>
-                </h3>
-                <font color="#116466">
-                    <button type="button" onclick="signup()">Sign Up</button>
-                </font>
+                
             </font>
         </div>
         <script>
             function signin() {
-                location.replace("login.html")
-            }
-            function signup() {
-                location.replace("admin.html")
+                var uid=document.getElementById("uname").value;
+                var pswd=document.getElementById("pswd").value;
+                if(uid=="admin" && pswd=="admin")
+                {
+                    location.replace("home.html")
+                }
+                else
+                {
+                    alert("invalid userid or password");
+                }
             }
         </script>
     </form>
 </body>
+
 </html>
