@@ -3,42 +3,19 @@
 
 <head>
     <title>University</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333333;
-        }
+    <link rel="icon" href="bf.png">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #111111;
-        }
-    </style>
+<script>
+    $(function () {
+        $('#header').load('header.html');
+    });
+</script>
 </head>
 
 <body>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="problemlist.html">Problemlist</a></li>
-        <li><a href="contest.html">Contest</a></li>
-        <li><a href="practice.html">Practice</a></li>
-        <li><a href="host.html">Host Contest</a></li>
-        <li><a href="university.html">University<a></li>
-    </ul>
+    <div id='header'></div>
     <pre style="text-align: center;">
             Problem List are availbale hear
             coming soon...

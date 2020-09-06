@@ -3,92 +3,79 @@
 
 <head>
     <title>Admin</title>
+    <link rel="icon" href="bf.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.5.2-dist/js/popper.min.js"></script>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background-image: url("Competitive-Programming-1.jpg");
-        }
-
-        .content {
-            display: grid;
-            background-color: bisque;
-            height: 100vh;
-            place-items: center;
-        }
-
-        table {
-            border: 1px solid green;
-            border-collapse: collapse;
-            background-color: linen;
+            font-family: Swis721 Lt BT, Square721 Cn BT, Swis721 Hv BT, Swis721 BT;
+            background-size: 100% 100%;
+            background-image: url("canbebg2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body>
-    <form action="home.html" class="content">
-        <table align="center" border="1">
-            <tr>
-                <th><label>Enter Your Email Id </label></th>
-                <td><input type="email" name="email"></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your Password </label></th>
-                <td><input type="password" name="passwd"><br></td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <input type="button" value="Get Verification Code" name="vrmail">
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <label> Enter Verification Code </label></th>
-                <td><input type="text" name="code"><br></td>
-            </tr>
-            <tr>
-                <th colspan="2"><input type="button" value="Verify Code"></th>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your First Name </label></th>
-                <td><input type="text" name="fname"><br></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your Last Name </label></th>
-                <td><input type="text" name="lname"><br></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your UserName </label></th>
-                <td><input type="text" name="uname"><br></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Register As A </label></th>
-                <td><input type="radio" value="Student" name="slt" id="std">Student
-                    <input type="radio" value="Compnay" name="slt" id="cmp">Compnay
-                    <input type="radio" value="University" name="slt" id="clg">University<br></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your University/compnay Name </label></th>
-                <td><input type="text" name="uname"><br></td>
-            </tr>
-            <tr>
-                <th>
-                    <label>Enter Your Website Address</label></th>
-                <td><input type="url" name="weburl"><br></td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <input type="submit">
-                </th>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <h2>UserSignup Form</h2>
+        <form action="home.html">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pswd" placeholder="Enter Your password" name="pswd">
+            </div>
+            <button type="button" class="btn btn-warning btn-lg btn-block">Get Verification Code</button>
+            <div class="form-group">
+                <label for="pwd">Enter Verification Code:</label>
+                <input type="password" class="form-control" id="vcode" placeholder="Enter Verification Code"
+                    name="pswd">
+            </div>
+            <button type="button" class="btn btn-warning btn-lg btn-block">Verify Code</button>
+            <div class="form-group">
+                <label for="pwd">First Name:</label>
+                <input type="password" class="form-control" id="fname" placeholder="Enter Your First Name" name="pswd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Last Name:</label>
+                <input type="password" class="form-control" id="lname" placeholder="Enter Your Last Name" name="pswd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">UserName:</label>
+                <input type="password" class="form-control" id="uname" placeholder="Enter Your User Name" name="pswd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Registre As A : </label><br>
+                <input type="radio" value="Student" name="slt" id="std">Student
+                <input type="radio" value="Compnay" name="slt" id="cmp">Compnay
+                <input type="radio" value="University" name="slt" id="clg">University
+            </div>
+            <div class="form-group">
+                <label for="pwd">University/compnay Name:</label>
+                <input type="password" class="form-control" id="ucname" placeholder="Enter Your University/compnay Name"
+                    name="pswd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">URL:</label>
+                <input type="password" class="form-control" id="waddr" placeholder="Enter Your Website Name"
+                    name="pswd">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">Accept Terms&Condition
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
 </body>
 
 </html>

@@ -2,6 +2,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js" ></script>
+    <script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <link rel="icon" href="bf.png">
     <title>login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +16,14 @@
 
         body {
             font-family: Swis721 Lt BT, Square721 Cn BT, Swis721 Hv BT, Swis721 BT;
-            background-image: url('bcode.jpg')
+            background-image: url("bcode.jpg")
         }
 
         form {
             border-radius: 25px;
             background: #0f0f0f;
             position: relative;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 20px 20px 20px;
             width: 500px;
         }
@@ -44,7 +47,6 @@
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
-            
             width: 100%;
             border-radius: 10px;
         }
@@ -57,21 +59,6 @@
         ::placeholder {
             color: white;
         }
-
-        table,
-        th,
-        td {
-            width: 100%;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        th {
-            color: white;
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -83,7 +70,7 @@
             </h2>
             <font color="#116466" class="heading">
                 <center><img title="Think out of the box for code" src="images.jpg"></center>
-                <input  type="text"  placeholder="Enter Userid Or Email" id="uname">
+                <input  type="text"  placeholder="Enter Userid Or Email" id="uname" autofocus>
                 <input  type="password"  placeholder="Enter Password " id="pswd">
                 <button type="button" onclick="signin()">Sign In</button><br>
                 
