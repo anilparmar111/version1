@@ -25,7 +25,7 @@
             position: relative;
             margin: 10px auto;
             padding: 20px 20px 20px;
-            width: 500px;
+            max-width: 500px;
         }
 
         button {
@@ -73,7 +73,9 @@
                 <input  type="text"  placeholder="Enter Userid Or Email" id="uname" autofocus>
                 <input  type="password"  placeholder="Enter Password " id="pswd">
                 <button type="button" onclick="signin()">Sign In</button><br>
-                
+                <font color="#116466">
+                    <button type="button" onclick="signup()">Not A Member Sign Up</button>
+                </font>
             </font>
         </div>
         <script>
@@ -89,6 +91,9 @@
                     alert("invalid userid or password");
                 }
             }
+            function signup() {
+                    location.replace("admin.html")
+                }
         </script>
     </form>
 </body>
